@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "htmlLang": "bs",
+    "ogLocale": "bs_BA",
+    "title": "Villa Solia Blagaj – vila s bazenom kod vrela Bune | DEMO",
+    "description": "Villa Solia u Blagaju kod Mostara: mirna vila za porodice i grupe, blizu vrela Bune i Tekije. Provjerite slobodne termine i pošaljite upit za rezervaciju.",
+    "ogTitle": "Villa Solia Blagaj",
+    "langName": "Bosanski"
+  },
+  "demo": {
+    "banner": "DEMO verzija – testni podaci. Upiti se ne šalju vlasniku i nisu stvarne rezervacije.",
+    "placeholder": "Privremena ilustracija"
+  },
+  "nav": {
+    "label": "Glavna navigacija",
+    "menu": "Meni",
+    "close": "Zatvori meni",
+    "about": "Vila",
+    "amenities": "Sadržaji",
+    "gallery": "Galerija",
+    "availability": "Dostupnost",
+    "location": "Lokacija",
+    "contact": "Kontakt",
+    "cta": "Pošalji upit",
+    "skip": "Preskoči na sadržaj",
+    "language": "Jezik"
+  },
+  "hero": {
+    "eyebrow": "Blagaj · Mostar · Hercegovina",
+    "title": "Mir, sunce i hercegovački kamen",
+    "lead": "Prostrana vila za porodice i prijatelje, na nekoliko minuta od vrela Bune i Tekije u Blagaju.",
+    "primary": "Provjeri dostupnost",
+    "secondary": "Upoznaj vilu"
+  },
+  "about": {
+    "title": "Dobrodošli u Villa Solia",
+    "p1": "Villa Solia je mjesto za odmor bez žurbe: jutarnja kafa na terasi, popodne uz bazen i večeri pod hercegovačkim zvijezdama.",
+    "p2": "Iz vile lako stižete do vrela Bune, Starog mosta u Mostaru, slapova Kravice i Počitelja.",
+    "note": "Tekst i podaci su primjer za demo i trebaju se zamijeniti stvarnim podacima vlasnika.",
+    "factGuests": "do 8 gostiju",
+    "factBedrooms": "4 spavaće sobe",
+    "factPool": "privatni bazen",
+    "factParking": "besplatan parking"
+  },
+  "amenities": {
+    "title": "Sadržaji",
+    "lead": "Sve što vam treba za opušten boravak.",
+    "pool": "Vanjski bazen",
+    "wifi": "Besplatan Wi-Fi",
+    "ac": "Klima uređaji",
+    "parking": "Privatni parking",
+    "kitchen": "Opremljena kuhinja",
+    "bbq": "Roštilj i terasa",
+    "garden": "Ograđeno dvorište",
+    "family": "Pogodno za djecu"
+  },
+  "gallery": {
+    "title": "Galerija",
+    "lead": "Ovdje dolaze stvarne fotografije vile, uz dozvolu vlasnika.",
+    "g1": "Vila i bazen",
+    "g2": "Dnevni boravak",
+    "g3": "Spavaća soba",
+    "g4": "Terasa u sumrak",
+    "g5": "Vrelo Bune",
+    "g6": "Dvorište"
+  },
+  "booking": {
+    "title": "Dostupnost i upit za rezervaciju",
+    "lead": "Odaberite datum dolaska i odlaska u kalendaru ili ih unesite u obrazac.",
+    "calendarLabel": "Kalendar dostupnosti",
+    "prev": "Prethodni mjesec",
+    "next": "Sljedeći mjesec",
+    "legendFree": "Slobodno",
+    "legendBooked": "Zauzeto",
+    "legendSelected": "Vaš odabir",
+    "hint": "Prvi klik je dolazak, drugi odlazak. Minimalno {min} noćenja.",
+    "loading": "Učitavanje dostupnosti…",
+    "offline": "Server nije dostupan – prikazani su lokalni testni podaci iz preglednika.",
+    "formTitle": "Upit za rezervaciju",
+    "arrival": "Dolazak",
+    "departure": "Odlazak",
+    "guests": "Broj gostiju",
+    "name": "Ime i prezime",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Poruka (nije obavezno)",
+    "privacy": "Podaci se koriste samo za odgovor na upit. U ovom demou se nigdje ne šalju.",
+    "submit": "Pošalji upit",
+    "sending": "Slanje…",
+    "nights": "{n} noćenja",
+    "success": "Hvala! Vaš testni upit je zabilježen i vidljiv je u demo admin panelu. Ništa nije poslano vlasniku.",
+    "errorsTitle": "Molimo ispravite označena polja.",
+    "selectedRange": "Odabrano: {from} – {to}"
+  },
+  "errors": {
+    "required": "Obavezno polje.",
+    "past": "Datum ne može biti u prošlosti.",
+    "tooFar": "Datum je predaleko u budućnosti.",
+    "beforeArrival": "Odlazak mora biti nakon dolaska.",
+    "minNights": "Minimalan boravak je {min} noćenja.",
+    "maxNights": "Maksimalan boravak je {max} noćenja.",
+    "unavailable": "Odabrani termin je (djelimično) zauzet.",
+    "guests": "Unesite od 1 do {max} gostiju.",
+    "name": "Unesite ime i prezime.",
+    "email": "Unesite ispravnu email adresu.",
+    "phone": "Unesite ispravan broj telefona (npr. +387 61 123 456).",
+    "tooLong": "Poruka je predugačka.",
+    "rate": "Previše upita. Pokušajte kasnije.",
+    "server": "Greška na serveru. Pokušajte ponovo."
+  },
+  "location": {
+    "title": "Lokacija",
+    "lead": "Blagaj se nalazi oko 12 km jugoistočno od Mostara, uz izvor rijeke Bune.",
+    "d1": "Vrelo Bune i Tekija",
+    "d2": "Stari most, Mostar",
+    "d3": "Aerodrom Mostar",
+    "d4": "Počitelj",
+    "d5": "Slapovi Kravice",
+    "approx": "Udaljenosti su okvirne i služe za demo.",
+    "map": "Otvori Blagaj na karti"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "lead": "Za pitanja koristite obrazac za upit. Kontakt podaci ispod su testni.",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adresa",
+    "addressValue": "Blagaj, 88201 Mostar, Bosna i Hercegovina"
+  },
+  "footer": {
+    "rights": "Demo projekat. Nije zvanična stranica Villa Solia.",
+    "admin": "Demo admin"
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "back": "Nazad na početnu"
+  }
+}

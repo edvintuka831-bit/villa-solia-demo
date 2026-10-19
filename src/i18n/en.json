@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "htmlLang": "en",
+    "ogLocale": "en_GB",
+    "title": "Villa Solia Blagaj – villa with pool near the Buna spring | DEMO",
+    "description": "Villa Solia in Blagaj near Mostar: a peaceful villa for families and groups, close to the Buna spring and the Dervish house. Check availability and send a booking inquiry.",
+    "ogTitle": "Villa Solia Blagaj",
+    "langName": "English"
+  },
+  "demo": {
+    "banner": "DEMO version – test data. Inquiries are not sent to the owner and are not real bookings.",
+    "placeholder": "Placeholder illustration"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "menu": "Menu",
+    "close": "Close menu",
+    "about": "The villa",
+    "amenities": "Amenities",
+    "gallery": "Gallery",
+    "availability": "Availability",
+    "location": "Location",
+    "contact": "Contact",
+    "cta": "Send inquiry",
+    "skip": "Skip to content",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Blagaj · Mostar · Herzegovina",
+    "title": "Peace, sunshine and Herzegovinian stone",
+    "lead": "A spacious villa for families and friends, minutes from the Buna spring and the Dervish house in Blagaj.",
+    "primary": "Check availability",
+    "secondary": "Discover the villa"
+  },
+  "about": {
+    "title": "Welcome to Villa Solia",
+    "p1": "Villa Solia is a place for unhurried holidays: morning coffee on the terrace, afternoons by the pool and evenings under the Herzegovinian stars.",
+    "p2": "From the villa you can easily reach the Buna spring, the Old Bridge in Mostar, Kravice waterfalls and Počitelj.",
+    "note": "Text and facts are sample content for this demo and should be replaced with the owner's real details.",
+    "factGuests": "up to 8 guests",
+    "factBedrooms": "4 bedrooms",
+    "factPool": "private pool",
+    "factParking": "free parking"
+  },
+  "amenities": {
+    "title": "Amenities",
+    "lead": "Everything you need for a relaxed stay.",
+    "pool": "Outdoor pool",
+    "wifi": "Free Wi-Fi",
+    "ac": "Air conditioning",
+    "parking": "Private parking",
+    "kitchen": "Equipped kitchen",
+    "bbq": "Barbecue & terrace",
+    "garden": "Enclosed garden",
+    "family": "Family friendly"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "lead": "Real photos of the villa go here, with the owner's permission.",
+    "g1": "Villa and pool",
+    "g2": "Living room",
+    "g3": "Bedroom",
+    "g4": "Terrace at dusk",
+    "g5": "Buna spring",
+    "g6": "Garden"
+  },
+  "booking": {
+    "title": "Availability & booking inquiry",
+    "lead": "Pick your arrival and departure dates in the calendar or enter them in the form.",
+    "calendarLabel": "Availability calendar",
+    "prev": "Previous month",
+    "next": "Next month",
+    "legendFree": "Available",
+    "legendBooked": "Booked",
+    "legendSelected": "Your selection",
+    "hint": "First tap is arrival, second is departure. Minimum {min} nights.",
+    "loading": "Loading availability…",
+    "offline": "Server unavailable – showing local test data stored in this browser.",
+    "formTitle": "Booking inquiry",
+    "arrival": "Arrival",
+    "departure": "Departure",
+    "guests": "Guests",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message (optional)",
+    "privacy": "Your details are only used to answer your inquiry. In this demo they are not sent anywhere.",
+    "submit": "Send inquiry",
+    "sending": "Sending…",
+    "nights": "{n} nights",
+    "success": "Thank you! Your test inquiry has been recorded and is visible in the demo admin. Nothing was sent to the owner.",
+    "errorsTitle": "Please correct the highlighted fields.",
+    "selectedRange": "Selected: {from} – {to}"
+  },
+  "errors": {
+    "required": "This field is required.",
+    "past": "The date cannot be in the past.",
+    "tooFar": "The date is too far in the future.",
+    "beforeArrival": "Departure must be after arrival.",
+    "minNights": "Minimum stay is {min} nights.",
+    "maxNights": "Maximum stay is {max} nights.",
+    "unavailable": "The selected dates are (partly) booked.",
+    "guests": "Enter between 1 and {max} guests.",
+    "name": "Please enter your full name.",
+    "email": "Please enter a valid email address.",
+    "phone": "Please enter a valid phone number (e.g. +387 61 123 456).",
+    "tooLong": "The message is too long.",
+    "rate": "Too many inquiries. Please try again later.",
+    "server": "Server error. Please try again."
+  },
+  "location": {
+    "title": "Location",
+    "lead": "Blagaj lies about 12 km south-east of Mostar, at the source of the Buna river.",
+    "d1": "Buna spring & Dervish house",
+    "d2": "Old Bridge, Mostar",
+    "d3": "Mostar Airport",
+    "d4": "Počitelj",
+    "d5": "Kravice waterfalls",
+    "approx": "Distances are approximate and for demo purposes.",
+    "map": "Open Blagaj on the map"
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "For questions please use the inquiry form. The contact details below are test data.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "Blagaj, 88201 Mostar, Bosnia and Herzegovina"
+  },
+  "footer": {
+    "rights": "Demo project. Not the official Villa Solia website.",
+    "admin": "Demo admin"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  }
+}

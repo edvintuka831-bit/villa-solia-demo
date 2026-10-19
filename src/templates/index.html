@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="{{meta.htmlLang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <!-- DEMO: keep the demo out of search engines so it never competes with the real site. Remove for production. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="{{siteUrl}}/{{lang}}/">
+{{alternates}}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Villa Solia Blagaj">
+  <meta property="og:title" content="{{meta.ogTitle}}">
+  <meta property="og:description" content="{{meta.description}}">
+  <meta property="og:url" content="{{siteUrl}}/{{lang}}/">
+  <meta property="og:locale" content="{{meta.ogLocale}}">
+  <meta property="og:image" content="{{siteUrl}}/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f6efe4">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preload" href="../assets/img/hero.svg" as="image">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script type="application/ld+json">{{jsonLd}}</script>
+  <script type="module" src="../assets/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">{{nav.skip}}</a>
+  <p class="demo-banner" role="note">{{demo.banner}}</p>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Villa Solia Blagaj">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="8"/><g stroke-width="2.4" stroke-linecap="round"><path d="M20 3v5M20 32v5M3 20h5M32 20h5M8 8l3.5 3.5M28.5 28.5 32 32M8 32l3.5-3.5M28.5 11.5 32 8"/></g></svg>
+        <span class="brand-text"><span class="brand-name">Villa Solia</span><span class="brand-place">Blagaj</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-label-open="{{nav.menu}}" data-label-close="{{nav.close}}">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden nav-toggle-label">{{nav.menu}}</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="{{nav.label}}">
+        <ul class="nav-list">
+          <li><a href="#about">{{nav.about}}</a></li>
+          <li><a href="#amenities">{{nav.amenities}}</a></li>
+          <li><a href="#gallery">{{nav.gallery}}</a></li>
+          <li><a href="#booking">{{nav.availability}}</a></li>
+          <li><a href="#location">{{nav.location}}</a></li>
+          <li><a href="#contact">{{nav.contact}}</a></li>
+        </ul>
+{{langSwitcher}}
+        <a class="btn btn-primary nav-cta" href="#booking">{{nav.cta}}</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-img" src="../assets/img/hero.svg" alt="{{demo.placeholder}}: {{gallery.g1}}" width="1600" height="900" fetchpriority="high">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">{{hero.eyebrow}}</p>
+        <h1 id="hero-title">{{hero.title}}</h1>
+        <p class="hero-lead">{{hero.lead}}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking">{{hero.primary}}</a>
+          <a class="btn btn-ghost" href="#about">{{hero.secondary}}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <h2 id="about-title">{{about.title}}</h2>
+          <p>{{about.p1}}</p>
+          <p>{{about.p2}}</p>
+          <p class="demo-note">{{about.note}}</p>
+        </div>
+        <ul class="facts">
+          <li>{{icon:guests}}<span>{{about.factGuests}}</span></li>
+          <li>{{icon:bed}}<span>{{about.factBedrooms}}</span></li>
+          <li>{{icon:pool}}<span>{{about.factPool}}</span></li>
+          <li>{{icon:parking}}<span>{{about.factParking}}</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="amenities" aria-labelledby="amenities-title">
+      <div class="container">
+        <h2 id="amenities-title">{{amenities.title}}</h2>
+        <p class="section-lead">{{amenities.lead}}</p>
+        <ul class="amenities">
+          <li>{{icon:pool}}{{amenities.pool}}</li>
+          <li>{{icon:wifi}}{{amenities.wifi}}</li>
+          <li>{{icon:ac}}{{amenities.ac}}</li>
+          <li>{{icon:parking}}{{amenities.parking}}</li>
+          <li>{{icon:kitchen}}{{amenities.kitchen}}</li>
+          <li>{{icon:bbq}}{{amenities.bbq}}</li>
+          <li>{{icon:garden}}{{amenities.garden}}</li>
+          <li>{{icon:family}}{{amenities.family}}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title">{{gallery.title}}</h2>
+        <p class="section-lead">{{gallery.lead}}</p>
+        <div class="gallery">
+          <figure><img src="../assets/img/g1.svg" alt="{{demo.placeholder}}: {{gallery.g1}}" width="800" height="600" loading="lazy" decoding="async"><figcaption>{{gallery.g1}}</figcaption></figure>
+          <figure><img src="../assets/img/g2.svg" alt="{{demo.placeholder}}: {{gallery.g2}}" width="800" height="600" loading="lazy" decoding="async"><figcaption>{{gallery.g2}}</figcaption></figure>
+          <figure><img src="../assets/img/g3.svg" alt="{{demo.placeholder}}: {{gallery.g3}}" width="800" height="600" loading="lazy" decoding="async"><figcaption>{{gallery.g3}}</figcaption></figure>
+          <figure><img src="../assets/img/g4.svg" alt="{{demo.placeholder}}: {{gallery.g4}}" width="800" height="600" loading="lazy" decoding="async"><figcaption>{{gallery.g4}}</figcaption></figure>
+          <figure><img src="../assets/img/g5.svg" alt="{{demo.placeholder}}: {{gallery.g5}}" width="800" height="600" loading="lazy" decoding="async"><figcaption>{{gallery.g5}}</figcaption></figure>
+          <figure><img src="../assets/img/g6.svg" alt="{{demo.placeholder}}: {{gallery.g6}}" width="800" height="600" loading="lazy" decoding="async"><figcaption>{{gallery.g6}}</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="booking" aria-labelledby="booking-title">
+      <div class="container">
+        <h2 id="booking-title">{{booking.title}}</h2>
+        <p class="section-lead">{{booking.lead}}</p>
+        <p class="status-note" id="data-status" hidden></p>
+        <div class="booking-grid">
+          <div class="calendar-card card">
+            <div class="calendar" id="calendar" role="group" aria-label="{{booking.calendarLabel}}">
+              <div class="calendar-nav">
+                <button type="button" class="icon-btn" data-cal="prev" aria-label="{{booking.prev}}">‹</button>
+                <p class="calendar-range" aria-live="polite"></p>
+                <button type="button" class="icon-btn" data-cal="next" aria-label="{{booking.next}}">›</button>
+              </div>
+              <div class="calendar-months"><p class="calendar-loading">{{booking.loading}}</p></div>
+            </div>
+            <ul class="legend">
+              <li><span class="swatch swatch-free"></span>{{booking.legendFree}}</li>
+              <li><span class="swatch swatch-booked"></span>{{booking.legendBooked}}</li>
+              <li><span class="swatch swatch-selected"></span>{{booking.legendSelected}}</li>
+            </ul>
+            <p class="calendar-hint" id="calendar-hint"></p>
+          </div>
+
+          <form class="card inquiry-form" id="inquiry-form" novalidate>
+            <h3>{{booking.formTitle}}</h3>
+            <div class="form-error" id="form-error" role="alert" hidden></div>
+            <div class="form-row two">
+              <div class="field">
+                <label for="arrival">{{booking.arrival}}</label>
+                <input id="arrival" name="arrival" type="date" required aria-describedby="arrival-error">
+                <p class="field-error" id="arrival-error"></p>
+              </div>
+              <div class="field">
+                <label for="departure">{{booking.departure}}</label>
+                <input id="departure" name="departure" type="date" required aria-describedby="departure-error">
+                <p class="field-error" id="departure-error"></p>
+              </div>
+            </div>
+            <p class="nights-summary" id="nights-summary" aria-live="polite"></p>
+            <div class="field">
+              <label for="guests">{{booking.guests}}</label>
+              <select id="guests" name="guests" required aria-describedby="guests-error">{{guestOptions}}</select>
+              <p class="field-error" id="guests-error"></p>
+            </div>
+            <div class="field">
+              <label for="name">{{booking.name}}</label>
+              <input id="name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="name-error">
+              <p class="field-error" id="name-error"></p>
+            </div>
+            <div class="form-row two">
+              <div class="field">
+                <label for="email">{{booking.email}}</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" aria-describedby="email-error">
+                <p class="field-error" id="email-error"></p>
+              </div>
+              <div class="field">
+                <label for="phone">{{booking.phone}}</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" aria-describedby="phone-error">
+                <p class="field-error" id="phone-error"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">{{booking.message}}</label>
+              <textarea id="message" name="message" rows="3" maxlength="1000" aria-describedby="message-error"></textarea>
+              <p class="field-error" id="message-error"></p>
+            </div>
+            <div class="hp" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <p class="privacy">{{booking.privacy}}</p>
+            <button class="btn btn-primary btn-block" type="submit" data-sending="{{booking.sending}}">{{booking.submit}}</button>
+            <div class="form-success" id="form-success" role="status" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="location" aria-labelledby="location-title">
+      <div class="container location-grid">
+        <div>
+          <h2 id="location-title">{{location.title}}</h2>
+          <p class="section-lead">{{location.lead}}</p>
+          <ul class="distances">
+            <li><span>{{location.d1}}</span><strong>~1 km</strong></li>
+            <li><span>{{location.d2}}</span><strong>~12 km</strong></li>
+            <li><span>{{location.d3}}</span><strong>~8 km</strong></li>
+            <li><span>{{location.d4}}</span><strong>~25 km</strong></li>
+            <li><span>{{location.d5}}</span><strong>~40 km</strong></li>
+          </ul>
+          <p class="demo-note">{{location.approx}}</p>
+          <a class="btn btn-ghost-dark" href="https://www.openstreetmap.org/search?query=Blagaj%2C%20Mostar" target="_blank" rel="noopener noreferrer">{{location.map}} ↗</a>
+        </div>
+        <img class="location-img" src="../assets/img/map.svg" alt="{{demo.placeholder}}: {{location.title}}" width="800" height="600" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">{{contact.title}}</h2>
+        <p class="section-lead">{{contact.lead}}</p>
+        <div class="contact-cards">
+          <div class="card">{{icon:phone}}<h3>{{contact.phone}}</h3><p>+387 00 000 000</p></div>
+          <div class="card">{{icon:mail}}<h3>{{contact.email}}</h3><p>info@example.com</p></div>
+          <div class="card">{{icon:pin}}<h3>{{contact.address}}</h3><address>{{contact.addressValue}}</address></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© {{year}} Villa Solia Blagaj · {{footer.rights}}</p>
+      <p><a href="../admin/">{{footer.admin}}</a></p>
+    </div>
+  </footer>
+
+  <a class="mobile-cta btn btn-primary" href="#booking">{{nav.cta}}</a>
+  <script type="application/json" id="i18n">{{i18nJson}}</script>
+</body>
+</html>

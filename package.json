@@ -1,0 +1,28 @@
+{
+  "name": "villa-solia-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DEMO web projekat za Villa Solia Blagaj: kalendar dostupnosti, upit za rezervaciju, demo admin, BS/EN/DE.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "npm run build && node server.mjs",
+    "dev": "npm run build && node server.mjs",
+    "reset-data": "node server.mjs --reset-only",
+    "lint": "eslint .",
+    "validate:html": "html-validate \"dist/**/*.html\"",
+    "test": "node --test \"tests/unit/*.test.mjs\"",
+    "test:e2e": "node --test --test-concurrency=1 \"tests/e2e/*.test.mjs\"",
+    "check": "npm run build && npm run lint && npm run validate:html && npm test && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0",
+    "html-validate": "^11.16.4",
+    "playwright": "^1.56.1"
+  }
+}

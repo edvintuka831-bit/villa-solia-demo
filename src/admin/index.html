@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Demo admin | Villa Solia Blagaj</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#2f3a2f">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+  <script type="module" src="../assets/js/admin.js"></script>
+</head>
+<body class="admin">
+  <p class="demo-banner" role="note">DEMO admin – testni podaci, bez stvarne autentikacije i bez slanja emailova.</p>
+  <header class="admin-header">
+    <div class="container admin-header-inner">
+      <a class="brand" href="../bs/">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="8"/><g stroke-width="2.4" stroke-linecap="round"><path d="M20 3v5M20 32v5M3 20h5M32 20h5M8 8l3.5 3.5M28.5 28.5 32 32M8 32l3.5-3.5M28.5 11.5 32 8"/></g></svg>
+        <span class="brand-text"><span class="brand-name">Villa Solia</span><span class="brand-place">Admin demo</span></span>
+      </a>
+      <button class="btn btn-ghost-dark btn-small" type="button" id="logout" hidden>Odjava</button>
+    </div>
+  </header>
+
+  <main class="container admin-main">
+    <section id="login-view" class="card login-card" aria-labelledby="login-title">
+      <h1 id="login-title">Prijava (demo)</h1>
+      <p>Demo lozinka: <code>demo1234</code></p>
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="password">Lozinka</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required>
+          <p class="field-error" id="password-error"></p>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Prijavi se</button>
+      </form>
+    </section>
+
+    <div id="admin-view" hidden>
+      <div class="admin-title-row">
+        <h1>Pregled</h1>
+        <p class="status-note" id="mode-note" hidden>Server nije pokrenut – podaci su spremljeni samo u ovom pregledniku.</p>
+      </div>
+
+      <ul class="stats" aria-label="Statistika upita">
+        <li><span class="stat-num" id="stat-new">0</span><span>Novi upiti</span></li>
+        <li><span class="stat-num" id="stat-confirmed">0</span><span>Potvrđeni</span></li>
+        <li><span class="stat-num" id="stat-declined">0</span><span>Odbijeni</span></li>
+        <li><span class="stat-num" id="stat-blocks">0</span><span>Blokirani termini</span></li>
+      </ul>
+
+      <div class="toast" id="toast" role="status" hidden></div>
+
+      <section class="admin-section" aria-labelledby="inq-title">
+        <div class="section-head">
+          <h2 id="inq-title">Upiti za rezervaciju</h2>
+          <div class="filter" role="group" aria-label="Filter po statusu">
+            <button type="button" class="chip" data-filter="all" aria-pressed="true">Svi</button>
+            <button type="button" class="chip" data-filter="new" aria-pressed="false">Novi</button>
+            <button type="button" class="chip" data-filter="confirmed" aria-pressed="false">Potvrđeni</button>
+            <button type="button" class="chip" data-filter="declined" aria-pressed="false">Odbijeni</button>
+          </div>
+        </div>
+        <p class="muted small">Potvrđeni upiti automatski zauzimaju termin u kalendaru. Novi i odbijeni ne blokiraju datume.</p>
+        <div id="inquiries" class="inquiries"></div>
+      </section>
+
+      <section class="admin-section" aria-labelledby="block-title">
+        <h2 id="block-title">Ručno blokiranje termina</h2>
+        <div class="admin-block-grid">
+          <div class="card">
+            <div class="calendar" id="admin-calendar" role="group" aria-label="Kalendar zauzetosti">
+              <div class="calendar-nav">
+                <button type="button" class="icon-btn" data-cal="prev" aria-label="Prethodni mjesec">‹</button>
+                <p class="calendar-range" aria-live="polite"></p>
+                <button type="button" class="icon-btn" data-cal="next" aria-label="Sljedeći mjesec">›</button>
+              </div>
+              <div class="calendar-months"></div>
+            </div>
+            <p class="calendar-hint">Kliknite prvi i posljednji dan (dan odlaska) da označite period.</p>
+          </div>
+          <div>
+            <form class="card" id="block-form" novalidate>
+              <h3>Novi blok</h3>
+              <div class="form-row two">
+                <div class="field">
+                  <label for="block-start">Od (prva noć)</label>
+                  <input id="block-start" name="start" type="date" required>
+                  <p class="field-error" id="start-error"></p>
+                </div>
+                <div class="field">
+                  <label for="block-end">Do (dan odlaska)</label>
+                  <input id="block-end" name="end" type="date" required>
+                  <p class="field-error" id="end-error"></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="block-note">Napomena</label>
+                <input id="block-note" name="note" type="text" maxlength="120" placeholder="npr. Booking.com, renoviranje…">
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Blokiraj termin</button>
+            </form>
+            <h3 class="list-title">Blokirani termini</h3>
+            <ul id="blocks" class="blocks"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-section danger-zone">
+        <h2>Demo podaci</h2>
+        <p class="muted small">Vraća sve upite i blokove na početne testne podatke.</p>
+        <button class="btn btn-ghost-dark" type="button" id="reset">Resetuj testne podatke</button>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

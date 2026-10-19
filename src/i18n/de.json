@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "htmlLang": "de",
+    "ogLocale": "de_DE",
+    "title": "Villa Solia Blagaj – Villa mit Pool an der Buna-Quelle | DEMO",
+    "description": "Villa Solia in Blagaj bei Mostar: ruhige Villa für Familien und Gruppen, nahe der Buna-Quelle und dem Derwischkloster. Verfügbarkeit prüfen und Buchungsanfrage senden.",
+    "ogTitle": "Villa Solia Blagaj",
+    "langName": "Deutsch"
+  },
+  "demo": {
+    "banner": "DEMO-Version – Testdaten. Anfragen werden nicht an den Eigentümer gesendet und sind keine echten Buchungen.",
+    "placeholder": "Platzhalter-Illustration"
+  },
+  "nav": {
+    "label": "Hauptnavigation",
+    "menu": "Menü",
+    "close": "Menü schließen",
+    "about": "Die Villa",
+    "amenities": "Ausstattung",
+    "gallery": "Galerie",
+    "availability": "Verfügbarkeit",
+    "location": "Lage",
+    "contact": "Kontakt",
+    "cta": "Anfrage senden",
+    "skip": "Zum Inhalt springen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "eyebrow": "Blagaj · Mostar · Herzegowina",
+    "title": "Ruhe, Sonne und herzegowinischer Stein",
+    "lead": "Eine geräumige Villa für Familien und Freunde, wenige Minuten von der Buna-Quelle und dem Derwischkloster in Blagaj.",
+    "primary": "Verfügbarkeit prüfen",
+    "secondary": "Villa entdecken"
+  },
+  "about": {
+    "title": "Willkommen in der Villa Solia",
+    "p1": "Die Villa Solia ist ein Ort für entspannten Urlaub: Morgenkaffee auf der Terrasse, Nachmittage am Pool und Abende unter dem Sternenhimmel der Herzegowina.",
+    "p2": "Von der Villa aus erreichen Sie bequem die Buna-Quelle, die Alte Brücke in Mostar, die Kravica-Wasserfälle und Počitelj.",
+    "note": "Texte und Angaben sind Beispielinhalte für die Demo und sollten durch die echten Daten des Eigentümers ersetzt werden.",
+    "factGuests": "bis zu 8 Gäste",
+    "factBedrooms": "4 Schlafzimmer",
+    "factPool": "privater Pool",
+    "factParking": "kostenloser Parkplatz"
+  },
+  "amenities": {
+    "title": "Ausstattung",
+    "lead": "Alles, was Sie für einen entspannten Aufenthalt brauchen.",
+    "pool": "Außenpool",
+    "wifi": "Kostenloses WLAN",
+    "ac": "Klimaanlage",
+    "parking": "Privatparkplatz",
+    "kitchen": "Ausgestattete Küche",
+    "bbq": "Grill & Terrasse",
+    "garden": "Eingezäunter Garten",
+    "family": "Familienfreundlich"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "lead": "Hier erscheinen echte Fotos der Villa – mit Erlaubnis des Eigentümers.",
+    "g1": "Villa und Pool",
+    "g2": "Wohnzimmer",
+    "g3": "Schlafzimmer",
+    "g4": "Terrasse in der Dämmerung",
+    "g5": "Buna-Quelle",
+    "g6": "Garten"
+  },
+  "booking": {
+    "title": "Verfügbarkeit & Buchungsanfrage",
+    "lead": "Wählen Sie An- und Abreise im Kalender oder geben Sie die Daten im Formular ein.",
+    "calendarLabel": "Verfügbarkeitskalender",
+    "prev": "Vorheriger Monat",
+    "next": "Nächster Monat",
+    "legendFree": "Frei",
+    "legendBooked": "Belegt",
+    "legendSelected": "Ihre Auswahl",
+    "hint": "Erster Tipp = Anreise, zweiter = Abreise. Mindestens {min} Nächte.",
+    "loading": "Verfügbarkeit wird geladen…",
+    "offline": "Server nicht erreichbar – es werden lokale Testdaten aus diesem Browser angezeigt.",
+    "formTitle": "Buchungsanfrage",
+    "arrival": "Anreise",
+    "departure": "Abreise",
+    "guests": "Anzahl Gäste",
+    "name": "Vor- und Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "message": "Nachricht (optional)",
+    "privacy": "Ihre Daten werden nur zur Beantwortung der Anfrage verwendet. In dieser Demo werden sie nirgendwohin gesendet.",
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet…",
+    "nights": "{n} Nächte",
+    "success": "Vielen Dank! Ihre Testanfrage wurde gespeichert und ist im Demo-Admin sichtbar. Es wurde nichts an den Eigentümer gesendet.",
+    "errorsTitle": "Bitte korrigieren Sie die markierten Felder.",
+    "selectedRange": "Ausgewählt: {from} – {to}"
+  },
+  "errors": {
+    "required": "Pflichtfeld.",
+    "past": "Das Datum darf nicht in der Vergangenheit liegen.",
+    "tooFar": "Das Datum liegt zu weit in der Zukunft.",
+    "beforeArrival": "Die Abreise muss nach der Anreise liegen.",
+    "minNights": "Mindestaufenthalt: {min} Nächte.",
+    "maxNights": "Maximaler Aufenthalt: {max} Nächte.",
+    "unavailable": "Der gewählte Zeitraum ist (teilweise) belegt.",
+    "guests": "Bitte 1 bis {max} Gäste angeben.",
+    "name": "Bitte geben Sie Ihren Namen ein.",
+    "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "phone": "Bitte geben Sie eine gültige Telefonnummer ein (z. B. +49 151 1234567).",
+    "tooLong": "Die Nachricht ist zu lang.",
+    "rate": "Zu viele Anfragen. Bitte später erneut versuchen.",
+    "server": "Serverfehler. Bitte erneut versuchen."
+  },
+  "location": {
+    "title": "Lage",
+    "lead": "Blagaj liegt etwa 12 km südöstlich von Mostar, an der Quelle der Buna.",
+    "d1": "Buna-Quelle & Derwischkloster",
+    "d2": "Alte Brücke, Mostar",
+    "d3": "Flughafen Mostar",
+    "d4": "Počitelj",
+    "d5": "Kravica-Wasserfälle",
+    "approx": "Entfernungen sind Richtwerte für die Demo.",
+    "map": "Blagaj auf der Karte öffnen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "lead": "Für Fragen nutzen Sie bitte das Anfrageformular. Die Kontaktdaten unten sind Testdaten.",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "address": "Adresse",
+    "addressValue": "Blagaj, 88201 Mostar, Bosnien und Herzegowina"
+  },
+  "footer": {
+    "rights": "Demo-Projekt. Nicht die offizielle Website der Villa Solia.",
+    "admin": "Demo-Admin"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "back": "Zur Startseite"
+  }
+}
