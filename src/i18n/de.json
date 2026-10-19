@@ -75,7 +75,7 @@
     "legendSelected": "Ihre Auswahl",
     "hint": "Erster Tipp = Anreise, zweiter = Abreise. Mindestens {min} Nächte.",
     "loading": "Verfügbarkeit wird geladen…",
-    "offline": "Server nicht erreichbar – es werden lokale Testdaten aus diesem Browser angezeigt.",
+    "offline": "Demo ohne Server: Testdaten und Ihre Anfragen werden nur in diesem Browser gespeichert.",
     "formTitle": "Buchungsanfrage",
     "arrival": "Anreise",
     "departure": "Abreise",

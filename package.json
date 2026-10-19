@@ -11,6 +11,7 @@
     "build": "node scripts/build.mjs",
     "start": "npm run build && node server.mjs",
     "dev": "npm run build && node server.mjs",
+    "package:netlify": "npm run build && rm -f release/villa-solia-demo-netlify.zip && mkdir -p release && cd dist && zip -qr -X ../release/villa-solia-demo-netlify.zip . && cd .. && echo 'ZIP: release/villa-solia-demo-netlify.zip'",
     "reset-data": "node server.mjs --reset-only",
     "lint": "eslint .",
     "validate:html": "html-validate \"dist/**/*.html\"",

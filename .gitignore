@@ -4,3 +4,4 @@ data/db.json
 test-results/
 screenshots/
 .DS_Store
+release/

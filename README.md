@@ -42,6 +42,8 @@ Server ispiše lokalnu i LAN adresu. Upiti i blokovi se spremaju u `data/db.json
 3. Dobijeni link otvorite na iPhoneu.
    Bez Node servera stranica sama prelazi u **lokalni način**: kalendar, obrazac i admin rade, ali se podaci čuvaju samo u tom pregledniku (localStorage). Na stranici je vidljiva napomena o tome.
 
+**Gotov ZIP za Netlify:** `npm run package:netlify` napravi `release/villa-solia-demo-netlify.zip`. To je izgrađena stranica, spremna za objavu bez build koraka. Uključuje `netlify.toml`, `_headers` (sigurnosni headeri + `noindex`) i `_redirects` (`/` → `/bs/`, `/en/` ili `/de/` prema jeziku preglednika).
+
 Savjet: u Safariju Share → „Add to Home Screen” daje ikonu demoa na početnom ekranu.
 
 ## Provjere

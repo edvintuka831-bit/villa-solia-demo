@@ -75,7 +75,7 @@
     "legendSelected": "Your selection",
     "hint": "First tap is arrival, second is departure. Minimum {min} nights.",
     "loading": "Loading availability…",
-    "offline": "Server unavailable – showing local test data stored in this browser.",
+    "offline": "Serverless demo: test data and your inquiries are stored only in this browser.",
     "formTitle": "Booking inquiry",
     "arrival": "Arrival",
     "departure": "Departure",

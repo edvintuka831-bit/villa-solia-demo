@@ -75,7 +75,7 @@
     "legendSelected": "Vaš odabir",
     "hint": "Prvi klik je dolazak, drugi odlazak. Minimalno {min} noćenja.",
     "loading": "Učitavanje dostupnosti…",
-    "offline": "Server nije dostupan – prikazani su lokalni testni podaci iz preglednika.",
+    "offline": "Demo bez servera: testni podaci i vaši upiti čuvaju se samo u ovom pregledniku.",
     "formTitle": "Upit za rezervaciju",
     "arrival": "Dolazak",
     "departure": "Odlazak",

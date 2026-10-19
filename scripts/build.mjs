@@ -121,7 +121,7 @@ async function main() {
   await cp(join(SRC, "assets"), join(DIST, "assets"), { recursive: true });
   await cp(join(SRC, "lib"), join(DIST, "assets", "lib"), { recursive: true });
   await cp(join(SRC, "admin"), join(DIST, "admin"), { recursive: true });
-  for (const f of ["index.html", "404.html", "site.webmanifest"]) {
+  for (const f of ["index.html", "404.html", "site.webmanifest", "_headers", "_redirects", "netlify.toml"]) {
     await cp(join(SRC, "root", f), join(DIST, f));
   }
 
