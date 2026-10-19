@@ -1,0 +1,42 @@
+# Builds the demo and publishes it as a downloadable artifact
+# "villa-solia-demo-netlify" (a ZIP of dist/, ready for Netlify Drop).
+# Runs on every push to the demo branch, or manually from the Actions tab.
+name: Netlify ZIP
+
+on:
+  push:
+    branches: [claude/villa-solia-demo-h180hh, main]
+  workflow_dispatch:
+    inputs:
+      site_url:
+        description: "Netlify URL for canonical/OG links (optional), e.g. https://ime.netlify.app"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+      - run: npm run build
+        env:
+          SITE_URL: ${{ inputs.site_url || 'https://demo.villasolia.example' }}
+      - run: npm run lint
+      - run: npm run validate:html
+      - run: npm test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: villa-solia-demo-netlify
+          path: dist/
+          include-hidden-files: true
+          retention-days: 30
